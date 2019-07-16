@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="/">Blog do NodeJS</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -7,17 +7,46 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>&emsp;&emsp;&emsp;
+      <li class="nav-item">
+        <a class="nav-link" href="/categorias">Categorias</a>
+      </li>&emsp;&emsp;&emsp;
+    {{#if user}}
+      
+
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="/admin/categorias">Editar Categorias</a>
+      </li>&nbsp;&nbsp;&emsp;
+
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/admin/categorias/add">Cadastar Categorias</a>
+      </li>&emsp;&emsp;&emsp;
+
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/admin/postagens">Editar Postagens</a>
+      </li>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+
+       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/usuarios/logout">Sair</a>
+      </li>
+
+    {{else}}
+
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="/usuarios/login">Login</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link disabled" href="/usuarios/registro">Registro</a>
     
-        
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
+    {{/if}}
     </ul>
    
   </div>

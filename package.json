@@ -4,14 +4,22 @@
   "description": "Blog App Ricardo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
-  "author": "ricardo Vieira de Souza",
+  "author": "Ricardo Vieira de Souza",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
     "express": "^4.17.1",
+    "express-favicon": "^2.0.1",
     "express-handlebars": "^3.1.0",
-    "mongoose": "^5.6.3"
+    "express-session": "^1.16.2",
+    "mongoose": "^5.6.3",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "serve-favicon": "^2.5.0"
   }
 }

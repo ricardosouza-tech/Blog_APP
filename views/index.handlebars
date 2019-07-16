@@ -1,0 +1,31 @@
+<div class="jumbotron">
+  <h1 class="display-4">Bem-vindo ao blog do NodeJS </h1>
+    <br>
+  <p class="lead"> A tecnologia está conquistando seu espaço a cada dia além de estar sendo atualizada constantemente. Atualmente grandes empresas utilizam da tecnologia e outras vem adotando e migrando suas aplicações de tecnologias já renomadas e grandes no mercado, tais como: Java e .Net para Node.js com o intuito de obter o máximo de escalabilidade e desempenho com uma redução da infraestrutura garantindo um bom nível de processamento demandado por várias aplicações. </p>
+  <hr class="my-4">
+  <p>Participe dos nosso blog criado Posts sobre NodeJS</p>
+  <a class="btn btn-primary btn-lg" href="/usuarios/registro" role="button">Crie uma conta</a>
+</div>
+<h2>Postagens recentes: </h2>
+
+{{#each postagens}}
+
+<div class="card mt-4">
+    <div class="card-body">
+       
+        <h3>{{titulo}}</h3>
+        <p>{{descricao}}</p>
+        <a href="/postagem/{{slug}}"><button class="btn btn-info">Leia mais...</button><a>
+        <hr>
+         <small>Categoria: {{categoria.nome}}</small><br>
+         <small>Data de Publicação:{{data}}</small>
+            
+
+    </div>
+</div>
+
+{{else}}
+
+<h5>Nenhuma Postagem</h5>
+
+{{/each}}
